@@ -1,0 +1,34 @@
+site_name: factors-no-more
+repo_url: https://github.com/your-org/factors-no-more
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: numpy
+            show_source: false
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - API:
+      - CausalSpec: api/causal_spec.md
+      - Estimators: api/estimators.md
+      - Multiplicity: api/multiplicity.md
+      - Guards: api/guards.md
+      - Protocol: api/protocol.md
+      - Simulators: api/simulators.md
+      - Report: api/report.md

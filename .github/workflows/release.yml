@@ -1,0 +1,34 @@
+name: release
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  semantic-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Poetry
+        run: pipx install poetry==1.8.3
+      - name: Install deps
+        run: |
+          poetry env use 3.12
+          poetry install
+      - name: Semantic Release
+        uses: python-semantic-release/python-semantic-release@v9.8.6
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          repository_username: __token__
+          repository_password: ${{ secrets.PYPI_TOKEN }}
