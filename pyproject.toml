@@ -12,7 +12,7 @@ repository = "https://github.com/your-org/factors-no-more"
 
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
-numpy = "^1.26.0"
+numpy = "^2.2.6"
 pandas = "^2.2.0"
 statsmodels = "^0.14.0"
 typing-extensions = "^4.10.0"
