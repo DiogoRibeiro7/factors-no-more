@@ -14,7 +14,7 @@ repository = "https://github.com/your-org/factors-no-more"
 python = ">=3.10,<3.13"
 numpy = "^2.2.6"
 pandas = "^2.2.0"
-statsmodels = "^0.14.0"
+statsmodels = "^0.14.6"
 typing-extensions = "^4.10.0"
 
 [tool.poetry.group.dev.dependencies]
