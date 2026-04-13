@@ -20,7 +20,7 @@ typing-extensions = "^4.10.0"
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^10.4.1"
 mkdocs = "^1.6.0"
-mkdocs-material = "^9.5.0"
+mkdocs-material = "^9.7.6"
 mkdocstrings = {version = "^1.0.0", extras=["python"]}
 
 pytest = "^9.0.0"
