@@ -15,7 +15,7 @@ python = ">=3.10,<3.13"
 numpy = "^2.2.6"
 pandas = "^2.2.0"
 statsmodels = "^0.14.0"
-typing-extensions = "^4.10.0"
+typing-extensions = "^4.15.0"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^10.4.1"
