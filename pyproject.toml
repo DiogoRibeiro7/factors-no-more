@@ -23,7 +23,7 @@ mkdocs = "^1.6.0"
 mkdocs-material = "^9.5.0"
 mkdocstrings = {version = "^1.0.0", extras=["python"]}
 
-pytest = "^9.0.0"
+pytest = "^9.0.3"
 pytest-cov = "^7.0.0"
 mypy = "^1.10.0"
 ruff = "^0.15.1"
