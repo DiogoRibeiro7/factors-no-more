@@ -21,7 +21,7 @@ typing-extensions = "^4.10.0"
 python-semantic-release = "^10.4.1"
 mkdocs = "^1.6.0"
 mkdocs-material = "^9.5.0"
-mkdocstrings = {version = "^1.0.0", extras=["python"]}
+mkdocstrings = {version = "^1.0.3", extras=["python"]}
 
 pytest = "^9.0.0"
 pytest-cov = "^7.0.0"
